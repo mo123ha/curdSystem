@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+    <title>curd </title>
+</head>
+<body>
+    
+
+<div class="crud container">
+   <div class="head text-center text-uppercase mt-5 mb-3">
+    <h1>curd</h1>
+    <p>project managment system</p>
+   </div>
+ <div class="inputs ">
+    <input type="text" placeholder="title" id="title" class="w-100 mb-3">
+    <div class="row g-2">
+        <div class="col-md-3 ">
+            <input type="number" placeholder="price" id="price" class="w-100 mb-3"> 
+        </div>
+        <div class="col-md-3">
+            <input type="number" placeholder="tax" id="tax" class="w-100 mb-3"> 
+            
+        </div> <div class="col-md-3">
+            <input type="number" placeholder="adv" id="adv" class="w-100 mb-3"> 
+            
+        </div>
+     <div class="col-md-3">
+        <input type="number" placeholder="Discount"  id="Discount" class="w-100 mb-3"> 
+        <small class=" p-2" id="total">total:</small>
+
+     </div> 
+    </div>
+    <input type="number" placeholder="count" id="count" class="w-100 mt-3 mb-3"> 
+    <input type="text" placeholder="categery" id="categery" class="w-100 mb-3"> 
+    <button class="  w-100" id="create">Create</button>
+    <!-- <button class=" d-none  w-100" id="add Update">add Update</button> -->
+    <input type="text" placeholder="search" id="search" class="w-100 mt-3 mb-3"> 
+    <div class="row g-2">
+   
+        <div class="col-md-6">
+            <button class="w-100" id="by title">Search by title</button>
+        </div>
+        <div class="col-md-6">
+            <button class=" w-100" id="by categery">Search by categery</button>
+        </div>
+
+       <button id="deleteALL" class="  w-100 mt-3 " >DeleteALL</button>
+
+    
+
+  
+    <table  class="table1  align-middle  text-center  bg-transparent mt-5 p-3  bg-body    ">
+        <thead class="text-uppercase">
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>Price</th>
+                <th>tax</th>
+                <th>ads</th>
+                <th>dicount</th>
+                <th>total</th>
+                <th>count</th>
+                <th>categery</th>
+               
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="myData">
+           
+    
+         
+        </tbody>
+    </table> 
+ </div>
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
